@@ -70,7 +70,7 @@ namespace PromptCombiner
 
         private void promptComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            introductionLabel.Content = currentSelectedTypeDictionary[(string)promptComboBox.SelectedValue].Item2;
+            if((string)promptComboBox.SelectedValue != null) introductionLabel.Content = currentSelectedTypeDictionary[(string)promptComboBox.SelectedValue].Item2;
         }
 
         private void addToPromptButton_Click(object sender, RoutedEventArgs e)
