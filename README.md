@@ -11,3 +11,4 @@ e.g
 
 # 可以保存当前的prompts和negative prompts到/presets中
 # 可能不会维护,毕竟很快就会有大佬整出新活
+![image](https://github.com/luzamm/PromptCombiner/blob/master/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-10-10%20205222.png)
