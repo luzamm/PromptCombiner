@@ -1,0 +1,35 @@
+﻿<Window x:Class="PromptCombiner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Prompt生成器" Height="377" Width="550" ResizeMode="NoResize">
+    <Grid>
+        <TabControl x:Name="tabControl">
+            <TabItem Header="Prompt生成">
+                <Grid Background="#ffffff">
+                    <ComboBox x:Name="promptTypeComboBox" HorizontalAlignment="Left" Margin="20,40,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="promptTypeComboBox_SelectionChanged"/>
+                    <ComboBox x:Name="promptComboBox" HorizontalAlignment="Left" Margin="160,40,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="promptComboBox_SelectionChanged"/>
+                    <Button x:Name="addToPromptButton" Content="添加到Prompt" HorizontalAlignment="Left" Margin="301,40,0,0" VerticalAlignment="Top" Height="21" Width="97" Click="addToPromptButton_Click"/>
+                    <Button x:Name="addToNegativeButton" Content="添加到Negative" HorizontalAlignment="Left" Margin="422,40,0,0" VerticalAlignment="Top" Width="97" Height="21" Click="addToNegativeButton_Click"/>
+                    <TextBox x:Name="promptTextBox" HorizontalAlignment="Left" Margin="20,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="499" Height="73" ToolTip="双击复制" MouseDoubleClick="copyToCopyboard"/>
+                    <TextBox x:Name="negativePromptTextBox" HorizontalAlignment="Left" Margin="20,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Height="55" ToolTip="双击复制" MouseDoubleClick="copyToCopyboard"/>
+                    <Button x:Name="loadConfigButton" Content="加载预设" HorizontalAlignment="Left" Margin="301,281,0,0" VerticalAlignment="Top" Width="97" Click="loadConfigButton_Click"/>
+                    <Button x:Name="saveConfigButton" Content="保存预设" HorizontalAlignment="Left" Margin="422,281,0,0" VerticalAlignment="Top" Width="97" Click="saveConfigButton_Click"/>
+                    <ComboBox x:Name="presetsComboBox" HorizontalAlignment="Left" Margin="301,245,0,0" VerticalAlignment="Top" Width="218"/>
+                    <Label x:Name="introductionLabel" Content="" HorizontalAlignment="Left" Margin="20,88,0,0" VerticalAlignment="Top" Width="499" Height="41" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+                    <Label Content="Prompt" HorizontalAlignment="Left" Margin="20,66,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label" Content="Negative Prompt" HorizontalAlignment="Left" Margin="20,217,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Prompt类型" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Prompt选择" HorizontalAlignment="Left" Margin="160,10,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="设置">
+                <Grid Background="#ffffff"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+
+
+</Window>
