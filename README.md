@@ -1,4 +1,5 @@
 # 看介绍
+下载地址---
 https://github.com/luzamm/PromptCombiner/releases/download/release/PromptCombiner_v0.0.3.zip
 # 要求.net6.0
 简单的组合关键词,省去网上扣扣扣
