@@ -1,6 +1,6 @@
-# PromptCombiner
-https://github.com/luzamm/PromptCombiner/releases/download/0.0.2/PromptCombiner.zip
-# 要求.net6.0!!!!!
+# 看介绍
+https://github.com/luzamm/PromptCombiner/releases/download/release/PromptCombiner_v0.0.3.zip
+# 要求.net6.0
 简单的组合关键词,省去网上扣扣扣
 本来想加个翻译 想想太麻烦还是算了
 # 关键词保存在/prompts里面了
