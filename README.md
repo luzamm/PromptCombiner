@@ -1,5 +1,5 @@
 # PromptCombiner
-
+https://github.com/luzamm/PromptCombiner/releases/download/0.0.2/PromptCombiner.zip
 # 要求.net6.0!!!!!
 简单的组合关键词,省去网上扣扣扣
 本来想加个翻译 想想太麻烦还是算了
