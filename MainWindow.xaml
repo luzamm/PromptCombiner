@@ -26,7 +26,10 @@
                 </Grid>
             </TabItem>
             <TabItem Header="设置">
-                <Grid Background="#ffffff"/>
+                <Grid Background="#ffffff">
+                    <TextBox x:Name="remotePromptUrlTextBox" HorizontalAlignment="Left" Margin="36,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="334" Height="23"/>
+                    <Button x:Name="applyRemotePromptButton" Content="应用远程prompt" HorizontalAlignment="Left" Margin="422,34,0,0" VerticalAlignment="Top" Height="23" Width="96" Click="applyRemotePromptButton_Click"/>
+                </Grid>
             </TabItem>
         </TabControl>
     </Grid>

@@ -10,7 +10,7 @@ namespace PromptCombiner
     /// </summary>
     public partial class MainWindow : Window
     {
-        Dictionary<string, Dictionary<string,(string,string)>> promptTypeDict = new Dictionary<string, Dictionary<string, (string, string)>>();
+        Dictionary<string, Dictionary<string, (string, string)>> promptTypeDict = new Dictionary<string, Dictionary<string, (string, string)>>();
         Dictionary<string, (string, string)> currentSelectedTypeDictionary;
         //prompt类型,prompt的中文译名,原名及介绍
         Dictionary<string, string[]> presetDict = new Dictionary<string, string[]>();
@@ -34,7 +34,7 @@ namespace PromptCombiner
                     {
                         string[] field = lines.Split('^');
                         if (!promptTypeDict.ContainsKey(field[0])) promptTypeDict.Add(field[0], new Dictionary<string, (string, string)>());//创建不存在的类型     
-                        if (!promptTypeDict[field[0]].ContainsKey(field[1])) promptTypeDict[field[0]].Add(field[1], (field[2], field[3]));
+                        if (!promptTypeDict[field[0]].ContainsKey(field[1])) promptTypeDict[field[0]].Add(field[1], (field[2], field[3]));//去重
                     }
                 }
             }
@@ -58,24 +58,24 @@ namespace PromptCombiner
 
         private void initializePromptTypeComboBox()
         {
-            foreach (string field in promptTypeDict.Keys)if(!field.Equals("")) promptTypeComboBox.Items.Add(field);
+            foreach (string field in promptTypeDict.Keys) if (!field.Equals("")) promptTypeComboBox.Items.Add(field);
         }
-        
+
         private void promptTypeComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             promptComboBox.Items.Clear();
             currentSelectedTypeDictionary = promptTypeDict[(string)promptTypeComboBox.SelectedValue];
-            foreach (KeyValuePair<string,(string,string)> field in currentSelectedTypeDictionary) promptComboBox.Items.Add(field.Key);
+            foreach (KeyValuePair<string, (string, string)> field in currentSelectedTypeDictionary) promptComboBox.Items.Add(field.Key);
         }
 
         private void promptComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if((string)promptComboBox.SelectedValue != null) introductionLabel.Content = currentSelectedTypeDictionary[(string)promptComboBox.SelectedValue].Item2;
+            if ((string)promptComboBox.SelectedValue != null) introductionLabel.Content = currentSelectedTypeDictionary[(string)promptComboBox.SelectedValue].Item2;
         }
 
         private void addToPromptButton_Click(object sender, RoutedEventArgs e)
         {
-            if (promptComboBox.SelectedIndex != -1&& !currentSelectedTypeDictionary[(string)promptComboBox.SelectedValue].Item1.Equals("")) promptTextBox.AppendText(currentSelectedTypeDictionary[(string)promptComboBox.SelectedValue].Item1 + ',');
+            if (promptComboBox.SelectedIndex != -1 && !currentSelectedTypeDictionary[(string)promptComboBox.SelectedValue].Item1.Equals("")) promptTextBox.AppendText(currentSelectedTypeDictionary[(string)promptComboBox.SelectedValue].Item1 + ',');
         }
 
         private void addToNegativeButton_Click(object sender, RoutedEventArgs e)
@@ -85,7 +85,7 @@ namespace PromptCombiner
 
         private void saveConfigButton_Click(object sender, RoutedEventArgs e)
         {
-            new SaveConfig(new string[] { promptTextBox.Text, negativePromptTextBox.Text}).ShowDialog();
+            new SaveConfig(new string[] { promptTextBox.Text, negativePromptTextBox.Text }).ShowDialog();
             initializePresets();
         }
 
@@ -100,7 +100,27 @@ namespace PromptCombiner
 
         private void copyToCopyboard(object sender, RoutedEventArgs e)
         {
-            if (promptComboBox.SelectedIndex != -1) negativePromptTextBox.AppendText(currentSelectedTypeDictionary[(string)promptComboBox.SelectedValue].Item1+',');
+            if (promptComboBox.SelectedIndex != -1) negativePromptTextBox.AppendText(currentSelectedTypeDictionary[(string)promptComboBox.SelectedValue].Item1 + ',');
+        }
+
+        // apply a text file get from a url from remotePromptUrlTextBox.Text, download it and write into a file    named "default.plist" in    the "prompts" folder//
+        private void applyRemotePromptButton_Click(object sender, RoutedEventArgs e)
+        {
+            {
+                if (remotePromptUrlTextBox.Text != null)
+                {
+                    string url = remotePromptUrlTextBox.Text;
+                    string fileName = "default.plist";
+                    string filePath = "prompts/" + fileName;
+                    if (File.Exists(filePath)) File.Delete(filePath);
+                    using (System.Net.WebClient client = new System.Net.WebClient())
+                    {
+                        client.DownloadFile(url, filePath);
+                    }
+                    initializePromptTypeDict();
+                    initializePromptTypeComboBox();
+                }
+            }
         }
 
     }
