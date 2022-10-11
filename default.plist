@@ -102,22 +102,222 @@
 腿部动作^躺着抬腿^feet up^（和lying, on stomach一起用。脚容易崩）
 腿部动作^跪地直立^kneeling^
 腿部动作^盘腿坐^indian style^
-^^^
-^^^
-^^^
-^^^
-^^^
-^^^
-^^^
-^^^
-^^^
-^^^
-^^^
-^^^
-^^^
-^^^
-^^^
-^^^
-^^^
-^^^
-^^^
+构图^女性^1girl^几个女孩：Xgirl/boy（比如2女既是2girl，3男既是3boy）
+构图^男性^1boy^几个男孩：Xboy（比如2女既是2girl，3男既是3boy）
+构图^六人以上^6+girls^
+构图^多人^multiple girls^多人：multiple girls/boys^
+构图^向下看^looking down^加from below就是从上往下看
+构图^向上看^looking up^加from above就是从下往上看
+构图^身高差^height difference^
+活动^玩水^wading^
+构图^浸在水中^partially submerged^
+构图^浮在水上^afloat^
+构图^脚在水里^soaking feet^
+构图^侧面^silhouette^
+构图^头/足部在画外^feet out of frame/head/feet out of frame^
+构图^在XX里^in container XX^
+构图^在纸箱里^in container cardboard box^
+构图^狙击^aiming at viewer^
+活动^逃跑^fleeing^
+身体姿态^弯腰，自然站立^contrapposto^
+物件^抱枕^dakimakura^
+身体姿态^战斗姿势^fighting stance^
+身体姿态^自拍^selfie^
+构图^透过玻璃^through glass/through glass/against glass^
+活动^锻炼^exercise^服装，动作会变为运动系
+身体姿态^伸展姿势^stretching^
+活动^唱歌^singing^
+活动^跳舞^dancing^
+活动^拳打^punching^在negative prompt里加boxing gloves
+活动^脚踢^kicking^
+身体姿态^婴儿的姿势^fetal position^脚容易崩
+身体姿态^胸贴在一起^symmetrical docking^
+身体姿态^正面相对^asymmetrical docking^
+脸部姿态^互看^eye contact^
+身体姿态^面对面^face to face / heads together^
+身体姿态^跨坐^straddling^
+身体姿态^仰面躺着^on stomach^
+身体姿态^侧卧^on side^
+身体姿态^不知道怎么说总之是orz的姿势^all fours^
+身体姿态^跪着^prostration^
+身体姿态^拘束^restrained^
+动作^背着^piggyback^
+外貌^袖口卷起^clothes lift^clothes lift / shirt lift / skirt lift / sweater lift / lifted by self / dress lift^
+动物^狗^doggystyle^
+动作^上身着地，双腿张开，臀部高高翘起的姿势^jack-o'_challenge,top down bottom up^
+动作^站立一字马^standing split^
+动作^贴墙^against wall^
+身体姿态^背靠背^back to back^
+动作^喂食^feeding^
+状态^睡觉^sleeping^
+姿态^躺着^reclining^
+活动^玩牌^playing card^
+动作^敬礼^salute^
+状态^紧缚^bound^bound / bondage / breast bondage / shibari
+动作^拿着枪^polearm^
+动作^抱腿坐^knees up^
+构图^头发过肩的构图^hair over shoulder^
+动作^用手整理头发^hand in own hai^
+手部动作^手放头上^hand on own face^
+手部动作^手放头发里^hands in hair^
+手部动作^手插兜^hands in pockets^
+手部动作^手在大腿之间^between legs^
+手部动作^手放背后^arm behind back^
+手部动作^手遮脸^hand over own mouth^
+手部动作^手放帽子上^hand on headwear^
+手部动作^手放下颚^hand on own chin^
+手部动作^手放脸颊^hand on own cheek^
+身体姿态^脸贴脸^cheek to cheek^
+身体姿态^双手抱胸^crossed arms^
+手部动作^向外伸手^outstretched hand^
+身体姿态^等待亲吻^imminent kiss^
+动作^点赞^thumbs up^
+动作^扎头发^adjusting hair/adjusting hair / tying hair^
+动作^拍头^headpat^
+动作^扶正帽子^adjusting headwear^
+身体姿态^身体前倾^leaning forward^
+身体姿态^更加前倾^bent over^
+身体姿态^弯腰^squatting^
+身体姿态^从背后抱住^hug from behind^
+身体姿态^盖着被^under covers^
+表情^嘴口有血^blood from mouth^
+手部动作^扶正眼镜^adjusting eyewear^
+动作^抱着枕头^pillow hug^
+身体姿态^猫一样的姿势^claw pose^会生成爪子所以负面加上claw
+手部动作^剪刀手^peace sign^
+构图^牵手^holding hands^
+身体姿态^双手支撑^arm support^
+身体姿态^张开双手^outstretched arms/outstretched arms/spread arms^
+身体姿态^抱着玩偶^stuffed toy/stuffed toy/ stuffed animal^
+手部动作^攥拳^clenched hand^
+手部动作^双手紧握^interlocked fingers^
+表情^嘘🤫^index finger raised^
+手部动作^手指向^手指向（观众/向上/自己/另一个人/向前/武器/向下/剑/向侧）：pointing (at viewer / up / at self / another / forward / weapon / down / sword / to the side)^
+手部动作^胸前两手紧握^own hands together^
+手部动作^舔手指^finger to mouth^
+身体姿态^抱着什么^object hug^
+身体姿态^胸放桌子上^breasts rest on table^
+动作^掐腰^hands on hips^
+动作^翘尾巴^tail raised^
+构图^挽手^arm hug^
+腿部动作^抬腿^leg lift^
+腿部动作^二郎腿^crossed legs^
+腿部动作^金鸡独立^standing on one leg^
+腿部动作^单膝跪地^one knee^
+腿部动作^躺着抬腿^feet up^
+腿部动作^跪地直立^kneeling^
+腿部动作^盘腿坐^indian style^
+人物^美少女^bishoujo^
+人物^大小姐^ojousama^
+人物^雌小鬼^mesugaki^
+人物^魅魔^succubus^
+外貌^长发^long hair^
+外貌^短发^short hair^
+外貌^眼睛^eyes^
+外貌^嘴^mouth^
+颜色^蓝^blue^
+颜色^红^rad^
+颜色^黄^yellow^
+颜色^绿^green^
+颜色^黑^black^
+颜色^白^while^
+颜色^灰^gray^
+颜色^紫^purple^
+颜色^樱草紫^Primrose purple^
+衣物^连衣裙^dress^
+衣物^校服^school uniform^
+衣物^旗袍^china^
+衣物^长筒袜^stocking^
+衣物^日本传统服饰^japanese clothes^
+衣物^露肩^bare shoulder^
+动物^猫^cat^
+外貌^耳朵^ear^
+外貌^尾巴^tail^
+外貌^手^hand^
+外貌^腿^legs^
+外貌^脚^feet^
+外貌^翅膀^wings^
+表情^微笑^smile^
+表情^开心^happy^
+表情^幸灾乐祸一样满足的笑^gloating^
+表情^雌小鬼的嘲笑^mesugaki smile^
+表情^兴奋^excited^
+表情^XD（笑）^:d, XD^
+表情^挑衅的笑的表情^tempting mesugaki smile with blush cheeks^
+表情^诱人的笑^seductive smile^
+表情^生气^angry^
+表情^苦^bitter^
+表情^厌恶^disgusted^
+表情^害羞^embarrassed^
+表情^邪恶^evil^
+表情^恐惧^fear^
+表情^令人恐惧^horrifying^
+表情^孤独的^lonely^
+表情^悲伤的^sad^
+表情^宁静的^serene^
+表情^惊喜的^surprised^
+表情^抑郁的^melancholic^
+表情^闭嘴^closed mouth^
+表情^半闭的嘴^half-closed mouth^
+表情^张嘴^open mouth^
+表情^嘴张开^ahegao^
+表情^微笑^smirk^
+表情^ω猫嘴^:3^
+表情^向上吐舌头^:q^
+表情^向下吐舌头^:p^
+表情^不耐烦^:t^
+表情^不开心^:| ^
+表情^吐舌头^tongue^
+表情^惊恐^terror^
+表情^哭泣^crying^
+表情^眼泪^tears^
+表情^惊恐^terror^
+天气^阳光照明^golden hour lighting^
+天气^强边缘照明^strong rim light^
+天气^强烈的阴影^intense shadows^
+天气^雨^in the rain^
+天气^雨天^rainy days^
+天气^日落^sunset^
+天气^日出^sun rise^
+天气^多云^cloudy^
+画面光线^明^light^
+画面光线^暗^dark^
+建筑物^巴洛克建筑^in the baroque architecture^
+建筑物^罗马街道^in the romanesque architecture streets^
+建筑物^宫廷^in the palace^
+建筑物^城的外观风景^at the castle^
+建筑物^城的内部风景^in the castle^
+建筑物^街道^in the street^
+建筑物^赛博朋克城市^in the cyberpunk city^
+建筑物^灯塔^at the lighthouse^
+建筑物^温泉^ in the onsen^
+建筑物^酒吧^in bars^
+建筑物^鸟居^japanese arch^
+建筑物^在上锁的房间^in a locker room^
+背景^在月亮边上^by the moon^
+背景^山上^on the hill^
+背景^山顶^the top of the hill^
+背景^海滩上^on the beach^
+背景^海边上^over the sea^
+背景^海边的美丽日落^beautiful purple sunset at beach^
+背景^海里^in the ocean^
+背景^船上^on the boat^
+背景^草地^in a meadow^
+背景^高原^plateau^
+背景^沙漠^on a desert^
+背景^夏威夷^^
+季节^春^spring^
+季节^夏^summer^
+季节^秋^in autumn^
+季节^冬^winter^
+风格^血源诅咒^bloodborne^
+风格^黑暗之魂^dark soul^
+风格^碧蓝幻想^granblue fantasy^
+风格^八方旅人^octopath traveler^
+风格^碧蓝航线^azur_lane^
+风格^碧蓝档案^blue_archive^
+风格^原神^Genshin-Impact^
+画面优化tag^佳能相机^by Canon EOS, SIGMA Art Lens 35mm F1.4, ISO 200 Shutter Speed 2000^
+画面优化tag^CG壁纸^detailed CG Unity 8k wallpaper^
+画面优化tag^佳作^masterpiece^
+
